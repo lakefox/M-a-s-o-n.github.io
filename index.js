@@ -70,7 +70,7 @@ function remove(e) {
 		}
 	}
 }
-var subr = ["anal","porn","rearpussy","gonewild","pussy","porn_gifs","milf"];
+var subr = ["Anal","Porn","RearPussy","GoneWild","Pussy","Porn_GIFs","MILF","AsianPorn","Ebony","Lesbians","Lesbian_GIFs","Amateur_Threesomes","Curvy","Topless_Babes","Nude_Selfie","TitsTouchingTits","BigBoobs","Orgy","NSFW_BabeTeenSex","BigAsses","CumShots","GirlsinSchoolUniforms","Fisting","PornStars","HoldTheMoan","OralCreampie","FaceSitting"];
 (()=>{
 	for (var i = 0; i < subr.length; i++) {
 		var e = document.createElement("span");
