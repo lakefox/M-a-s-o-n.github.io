@@ -70,7 +70,7 @@ function remove(e) {
 		}
 	}
 }
-var subr = ["Anal","Porn","RearPussy","GoneWild","Pussy","Porn_GIFs","MILF","AsianPorn","Ebony","Lesbians","Lesbian_GIFs","Amateur_Threesomes","Curvy","Topless_Babes","Nude_Selfie","TitsTouchingTits","BigBoobs","Orgy","NSFW_BabeTeenSex","BigAsses","CumShots","GirlsinSchoolUniforms","Fisting","PornStars","HoldTheMoan","OralCreampie","FaceSitting"];
+var subr = ["all", "gifs", "pics", "bitcoin"];
 (()=>{
 	for (var i = 0; i < subr.length; i++) {
 		var e = document.createElement("span");
@@ -100,9 +100,10 @@ if (("standalone" in window.navigator) && detectmob() && window.navigator.standa
 
 } else if (("standalone" in window.navigator) && detectmob() && !window.navigator.standalone) {
 	// On mobile but not in standalone
-
+	document.querySelector("#aths").style.display = "inherit";
 } else {
 	// Is on desktop
+	console.log("Desktop") 
 }
 function detectmob() {
    if(window.innerWidth <= 800 && window.innerHeight <= 600) {
@@ -111,3 +112,24 @@ function detectmob() {
      return false;
    }
 }
+var password = "";
+function numpadInput(e) {
+	var n = ["#one", "#two", "#three", "#four"];
+	if (e.className == "t" && !isNaN(e.innerHTML)) {
+		password += e.innerHTML;
+		document.querySelector(n[password.length-1]).innerHTML = "*";
+		if (password.length == 4) {
+			if (password == "5313") {
+				document.querySelector("#password").style.display = "none";
+			} else if (password == "8769"){
+				// Panic mode SHOW COLOR RUSH
+				console.log("PANIC!!!")
+			} else {
+				// Wrong Password
+			}
+		}
+	} else {
+		document.querySelector(n[password.length-1]).innerHTML = "";
+		password = password.slice(0,password.length-1);
+	}
+};
